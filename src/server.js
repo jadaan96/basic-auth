@@ -15,7 +15,7 @@ const users = require('./auth/models/users-model');
 
 app.get('/', (req, res)=>{ //home endpoint
     res.status(200).json({
-        message: 'Hello World!!😎'
+        message: 'home page is running smoothly'
     })
 })
 
