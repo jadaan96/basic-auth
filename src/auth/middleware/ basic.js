@@ -17,6 +17,7 @@ const { User } = require('../models');
         next();
       }
       else {
+        res.status(401).send('Invalid password');
         throw new Error('this user is invalid');
       }
   }}
