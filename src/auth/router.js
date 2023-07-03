@@ -11,12 +11,14 @@ router.post('/signup', handelSignup);
 
 async function handelSignup(req,res){
   req.body.password= await bcrypt.hash(req.body.password,10);
+  
   const record = await User.create(req.body);
   res.status(201).json(record);
 }//
 
 router.post('/signin',basicAuthMiddleWare, handelSignin); 
 async function handelSignin(req,res){
+  console.log(req.user.password,"000000000000000000000")
   res.status(200).json(req.user);
 }
 
