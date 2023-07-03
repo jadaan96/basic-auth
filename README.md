@@ -1,5 +1,5 @@
 # basic-auth
-[pull Request](https://github.com/jadaan96/basic-auth/pull/1)
+[pull Request](https://github.com/jadaan96/basic-auth/pull/3)
 
 
 [Action](https://github.com/jadaan96/basic-auth/actions)
